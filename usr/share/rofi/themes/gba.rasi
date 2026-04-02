@@ -1,0 +1,176 @@
+configuration {
+font: "VT323 20";
+}
+
+* {
+    alternate-urgent-background: green;
+    selected-urgent-foreground:  red;
+    alternate-active-foreground: yellow;
+    selected-active-background:  white;
+    highlight:                   bold italic ;
+    normal-foreground:           white;
+    background:                  rgba(41,81,198, 0.2); //il vero background quello che deve diventare blu trasparente
+    scrollbar-handle:            var(border-color);
+    alternate-normal-foreground: white; //scritta alternativa
+    urgent-foreground:           orange;
+    alternate-urgent-foreground: cyan;
+    selected-active-foreground:  rgba(41,81,198, 0.2);
+    separatorcolor:              var(border-color);
+    selected-normal-background:  brown;
+    selected-urgent-background:  aqua;
+    scrollbar:                   false;
+    alternate-active-background: var(active-background);
+    active-background:           grey;
+    background-color:            var(background);
+    normal-background:           var(background);
+    border-color:                indigo;
+    foreground:                  var(normal-foreground);
+    alternate-normal-background: rgba(41,81,198, 0.2);
+    urgent-background:           #848db8;
+    selected-normal-foreground:  white; //colore scritta selezione
+    active-foreground:           var(background);
+}
+
+window {
+    padding:          0;
+    border:           0;
+}
+
+mainbox {
+    padding: 0;
+    border:  0;
+}
+
+message {
+    padding:      0px ;
+    border-color: var(separatorcolor);
+    border:       0px 0px 0px ;
+}
+
+textbox {
+    highlight:  var(highlight);
+    text-color: var(foreground);
+}
+
+listview {
+    padding:      0px 0px 0px ;
+    scrollbar:    var(scrollbar);
+    border-color: var(separatorcolor);
+    spacing:      0px ;
+    border:       0px 0px 0px ;
+}
+
+element {
+    padding: 2px ;
+    border:  0;
+}
+
+element normal.normal {
+    background-color: var(normal-background);
+    text-color:       var(normal-foreground);
+}
+
+element normal.urgent {
+    background-color: var(urgent-background);
+    text-color:       var(urgent-foreground);
+}
+
+element normal.active {
+    background-color: var(active-background);
+    text-color:       var(active-foreground);
+}
+
+element selected.normal {
+    text-color: #fffba5;
+    font-weight: bold;
+}
+
+element selected.urgent {
+    background-color: var(selected-urgent-background);
+    text-color:       var(selected-urgent-foreground);
+}
+
+element selected.active {
+    background-color: var(selected-active-background);
+    text-color:       var(selected-active-foreground);
+}
+
+element alternate.normal {
+    background-color: var(alternate-normal-background);
+    text-color:       var(alternate-normal-foreground);
+}
+
+element alternate.urgent {
+    background-color: var(alternate-urgent-background);
+    text-color:       var(alternate-urgent-foreground);
+}
+
+element alternate.active {
+    background-color: var(alternate-active-background);
+    text-color:       var(alternate-active-foreground);
+}
+
+mode-switcher {
+    border-color: var(separatorcolor);
+    border:       2px 0px 0px ;
+}
+
+//needed
+inputbar {
+    padding:    8px ;
+    spacing:    0;
+    font-weight: bold;
+    text-color: #394131; //colore testo inputbar
+    background-color: #adba4a; //colore inputbar di sopra
+    children:   [ "prompt","textbox-prompt-sep","entry","case-indicator" ];
+}
+
+//needed
+case-indicator {
+    spacing:    0;
+    text-color: #394131;
+background-color: #adba4a;
+}
+
+//needed
+entry {
+    spacing:    0;
+    text-color: #394131;
+    background-color: #adba4a;
+}
+
+//needed
+prompt {
+    spacing:    0;
+    text-color: #394131;
+    background-color: #adba4a;
+}
+
+button {
+    spacing:    0;
+    text-color: var(normal-foreground);
+}
+
+button selected {
+    background-color: var(selected-normal-background);
+    text-color:       #fffba5;
+}
+
+//needed 
+textbox-prompt-sep {
+    margin:     0px 0.3000em 0px 0px ;
+    expand:     false;
+    str:        ":";
+    text-color: #394131;
+    background-color: #adba4a;
+}
+
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+element-icon {
+    background-color: inherit;
+    text-color:       inherit;
+}

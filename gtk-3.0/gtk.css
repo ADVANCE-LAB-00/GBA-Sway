@@ -1,0 +1,83 @@
+/*thunar*/
+
+
+* {
+    font-family: "VT323";
+    font-size: 14pt;
+}
+
+
+.thunar toolbar{
+  margin-top: 0px;
+  padding-bottom: 6px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background-color: #7b21bd; } /*colore barra superiore */
+
+/*buttons in toolbar*/
+
+.thunar toolbar.horizontal button image {
+   color: white; /*barra superiore con < > ^ HOME */
+  -gtk-icon-transform:scale(0.72);
+}
+
+scrolledwindow.sidebar treeview.view {
+  border: none;
+  background: #00a573; /* colore barra laterale sinistra */
+  color: white; /* colore scritta barra laterale sinistra */
+}
+
+treeview {
+background-color: #7b21bd;
+border: 0px solid #ccc;
+color: #9c94c6;
+}
+
+grid /*parte di sotto centrale*/{
+background-color: #ad73d6;
+color: white;
+}
+
+GtkButton {
+background-color: white;
+color: white;
+}
+
+/*parte sotto a sinistra*/
+paned {
+background-color: #00a573;
+color: white;
+}
+
+button,eventbox,
+menubar {
+background-color: #d6bdef;
+color: white;
+}
+
+*:selected,
+*:selected:focus,
+.view:selected,
+.view:selected:focus {
+    background-color: #7b21bd;
+    color: #ffffff;
+}
+
+menu,
+menu > menuitem {
+background-color: #7b21bd;
+color: white;
+}
+
+
+
+
+
+/* 1. Sovrascrittura delle variabili CORE del tema GTK */
+@define-color theme_selected_bg_color #7b21bd;
+
+
+
+
+@define-color theme_unfocused_selected_bg_color none;
+

@@ -1,0 +1,138 @@
+// -*- mode: jsonc -*-
+{
+    // "layer": "top", // Waybar at top layer
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 40, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 4, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": [
+        "sway/workspaces"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+       "custom/bluetooth",
+        "custom/updates",
+        "custom/screen-recording",
+        "pulseaudio",
+        "network",
+        "group/hardware",
+        "battery",
+        "battery#bat2",
+        "custom/power"
+    ],
+    // Modules configuration
+
+    "clock": {
+        "timezone": "Europe/Rome",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "battery#bat2": {
+        "bat": "BAT2"
+    },
+
+    "network": {
+        "interface": "wlp0s20f3", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+
+"custom/updates": {
+    "format": "",
+    "escape": true,
+    "return-type": "json",
+    "restart-interval": 60,
+    "on-click": "alacritty --class dotfiles-floating -e ~/.config/scripts/updater.sh"
+  },
+  "custom/screen-recording": {
+    "format": "",
+    "interval": 30,
+    "on-click": "alacritty --class dotfiles-floating -e ~/.config/scripts/screen-recording",
+    "format-no-controller": ""
+  },
+
+   "custom/bluetooth": {
+    "format": "B-O",
+    "on-click": "alacritty --class dotfiles-floating -e ~/.config/scripts/bluetooth.sh",
+    "format-no-controller": "B-X"
+  },
+
+"cpu": {
+    "format": "/ C {usage}% ",
+  },
+
+  "memory": {
+    "format": "/ M {}% "
+  },
+
+  "disk": {
+    "interval": 30,
+    "format": "D {percentage_used}% ",
+    "path": "/"
+  },
+
+"group/hardware": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "not-memory",
+      "transition-left-to-right": false
+    },
+    "modules": ["disk", "cpu", "memory"]
+  },
+
+    "custom/power": {
+        "format" : "⏻",
+		"tooltip": false,
+		"menu": "on-click",
+		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
+		"menu-actions": {
+			"shutdown": "shutdown",
+			"reboot": "reboot",
+			"suspend": "systemctl suspend",
+			"hibernate": "systemctl hibernate"
+		}
+    }
+}

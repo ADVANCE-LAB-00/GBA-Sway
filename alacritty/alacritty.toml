@@ -1,0 +1,17 @@
+[font]
+normal = { family = "VT323", style = "Regular" }
+size = 21.0
+
+[window]
+opacity= 0.4
+
+
+# Normal colors
+[colors.normal]
+black =    '0xebebeb'
+red =      '0xd6000c'
+green =    '0x1d9700'
+magenta =  '0xdd0f9d'
+white =    '#ffffff'
+blue = '0x1168e3' #ok
+cyan = "#99CEE0" #migliora
