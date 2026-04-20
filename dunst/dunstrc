@@ -6,8 +6,7 @@
     font = VT323 16
     foreground = "#f5f8f8"
     background = "#28e008"
-#"#18988880"
     frame_color = "#f8f810" 
-#"#f5f8f8" 
+
     timeout = 7
     separator_color = auto
