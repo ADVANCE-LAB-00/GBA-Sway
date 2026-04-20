@@ -9,9 +9,9 @@ font: "VT323 20";
     selected-active-background:  white;
     highlight:                   bold italic ;
     normal-foreground:           white;
-    background:                  rgba(41,81,198, 0.2); //il vero background quello che deve diventare blu trasparente
+    background:                  rgba(41,81,198, 0.2); 
     scrollbar-handle:            var(border-color);
-    alternate-normal-foreground: white; //scritta alternativa
+    alternate-normal-foreground: white; 
     urgent-foreground:           orange;
     alternate-urgent-foreground: cyan;
     selected-active-foreground:  rgba(41,81,198, 0.2);
@@ -27,7 +27,7 @@ font: "VT323 20";
     foreground:                  var(normal-foreground);
     alternate-normal-background: rgba(41,81,198, 0.2);
     urgent-background:           #848db8;
-    selected-normal-foreground:  white; //colore scritta selezione
+    selected-normal-foreground:  white; 
     active-foreground:           var(background);
 }
 
@@ -115,7 +115,7 @@ mode-switcher {
     border:       2px 0px 0px ;
 }
 
-//needed
+
 inputbar {
     padding:    8px ;
     spacing:    0;
@@ -125,21 +125,21 @@ inputbar {
     children:   [ "prompt","textbox-prompt-sep","entry","case-indicator" ];
 }
 
-//needed
+
 case-indicator {
     spacing:    0;
     text-color: #394131;
 background-color: #adba4a;
 }
 
-//needed
+
 entry {
     spacing:    0;
     text-color: #394131;
     background-color: #adba4a;
 }
 
-//needed
+
 prompt {
     spacing:    0;
     text-color: #394131;
@@ -156,7 +156,7 @@ button selected {
     text-color:       #fffba5;
 }
 
-//needed 
+
 textbox-prompt-sep {
     margin:     0px 0.3000em 0px 0px ;
     expand:     false;
