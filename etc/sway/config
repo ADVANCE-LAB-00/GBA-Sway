@@ -27,9 +27,6 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id dbus-update-activation-environment --all
 
 
-#bindswitch lid:off exec loginctl suspend
-#bindswitch lid:off exec swaymsg "output * dpms on"
-
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 
@@ -142,6 +139,7 @@ set $ws8 "8: "
 #set $ws9 "9"
 #set $ws10 "10"
 
+
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
@@ -231,23 +229,10 @@ gaps outer 5
 
 #Added commands
 bindsym $mod+Shift+d exec thunar
-bindsym $mod+n exec sh ~/.config/scripts/neuron
+
 
 #Programs to run as soon as logging in
 exec gentoo-pipewire-launcher restart &
 exec waybar
 exec swaybg -i 'Immagini e video'/wallpaper.png &
-#exec picom
 exec dunst
-#exec discord
-#exec firefox-bin
-#exec firefox-bin -private-window
-
-
-
-#include /etc/sway/config.d/*
-
-#for_window [app_id="imv"] floating enable
-#for_window [app_id="imv"] move position 1400 40
-#for_window [app_id="imv"] border none
-#for_window [app_id="imv"] focus disable
