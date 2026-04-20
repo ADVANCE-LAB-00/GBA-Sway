@@ -14,3 +14,29 @@ PLEASE keep i mind that this was made for my own personal use, so maybe some fil
 For example, I have a very simple updater file that's specific for Gentoo, so I chose not to upload it.
 
 More information can be found on my Blog: https://advance-lab-00.blogspot.com/search/label/linux
+
+
+
+<img width="1920" height="1080" alt="screenshot-2026-04-02-101850" src="https://github.com/user-attachments/assets/40c41b55-4e60-42bb-a46a-008583c80899" />
+
+
+
+
+<img width="1920" height="1080" alt="screenshot-2026-04-02-102000" src="https://github.com/user-attachments/assets/f9aeced7-941d-4dd0-9d13-b1312e894ec6" />
+
+
+
+
+
+<img width="1920" height="1080" alt="screenshot-2026-04-02-102822" src="https://github.com/user-attachments/assets/3b956264-ebf2-4aa9-a5d9-121bb8960064" />
+
+
+
+
+
+<img width="1920" height="1080" alt="screenshot-2026-04-02-102152" src="https://github.com/user-attachments/assets/4053503c-c963-4619-b94c-5da40528e460" />
+
+
+
+
+<img width="1920" height="1080" alt="screenshot-2026-04-02-101904" src="https://github.com/user-attachments/assets/27427495-dcc6-46b4-bcc7-b675d211e127" />
