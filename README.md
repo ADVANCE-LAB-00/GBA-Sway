@@ -11,6 +11,7 @@ Some other things could be added later on, like Swaylock and an SDDM login in sc
 #### 3. HOW TO USE
 The configuration was made and tested on CachyOS, but was then adapted for Gentoo, which I daily drive. The files can be easily downloaded and modified according to preferences.
 PLEASE keep i mind that this was made for my own personal use, so maybe some files are missing because they're scripts I personally use and that maybe are not suitable for all users. 
+The font is VT323 and the icons are from the Chicago95 icon pack. I haven't covered the installation of those on my Blog or on my YouTube channel.
 For example, I have a very simple updater file that's specific for Gentoo, so I chose not to upload it.
 
 More information can be found on my Blog: https://advance-lab-00.blogspot.com/search/label/linux
