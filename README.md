@@ -1,11 +1,11 @@
 # GBA-Sway
-A Sway configuration inspired by GBA games, including Metroid: Fusion, Metroid: Zero Mission, The Legends of Zelda: The Minish Cap, Pokémon RSE/FRLG, Mega Man Battle Network 3.
+A Sway-wm configuration inspired by GBA games, including Metroid: Fusion, Metroid: Zero Mission, The Legends of Zelda: The Minish Cap, Pokémon RSE/FRLG, Mega Man Battle Network 3.
 
 #### 1. THE GOAL OF THIS CONFIGURATION
-The idea is of course trying to take inspiration from different GBA games and create a desktop that imediately recalls the user of a certain game. 
+The idea is of course trying to take inspiration from different GBA games and create a desktop that immediately recalls the user of a certain game. 
 
 #### 2. CURRENT STATE
-The main configuration is basically done. It works, even though I would porbably still try to perfect something, like the font, some parts of the gtk theme, and Alacritty colours.
+The main configuration is basically done. It works, even though I would probably still try to perfect something, like the font, some parts of the gtk theme, and Alacritty colours.
 Some other things could be added later on, like Swaylock and an SDDM login in screen. 
 
 #### 3. HOW TO USE
